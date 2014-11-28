@@ -1,0 +1,1 @@
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services.Tests\obj\Debug\GallerySystemServices.Services.Tests.csprojResolveAssemblyReference.cache

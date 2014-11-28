@@ -1,0 +1,163 @@
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Services.dll.config
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Services.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Services.pdb
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Antlr3.Runtime.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\EntityFramework.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\EntityFramework.SqlServer.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Data.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySysteServices.Models.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Data.Edm.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Data.OData.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Newtonsoft.Json.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Spatial.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Helpers.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.OData.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.Tracing.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Mvc.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Optimization.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Providers.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Razor.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.Razor.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\WebGrease.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.AspNet.Scaffolding.12.0.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Data.pdb
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySysteServices.Models.pdb
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\EntityFramework.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\EntityFramework.SqlServer.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Helpers.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Mvc.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Razor.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.Razor.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Newtonsoft.Json.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.Tracing.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.OData.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Data.Edm.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Data.OData.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Spatial.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.AspNet.Scaffolding.12.0.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\de\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\es\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\fr\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\it\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ja\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ko\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\ru\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\obj\Debug\GallerySystemServices.Services.csprojResolveAssemblyReference.cache
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\obj\Debug\GallerySystemServices.Services.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\obj\Debug\GallerySystemServices.Services.pdb
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Net.Http.Formatting.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.WebHost.dll
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Net.Http.Formatting.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.xml
+C:\Users\kristiyan\documents\visual studio 2013\Projects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.WebHost.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Services.dll.config
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Services.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Services.pdb
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Antlr3.Runtime.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\EntityFramework.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\EntityFramework.SqlServer.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Data.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySysteServices.Models.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Data.Edm.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Data.OData.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Web.Infrastructure.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Newtonsoft.Json.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Net.Http.Formatting.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Spatial.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Helpers.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.OData.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.Tracing.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.WebHost.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Mvc.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Optimization.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Providers.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Razor.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.Deployment.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.Razor.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\WebGrease.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.AspNet.Scaffolding.12.0.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySystemServices.Data.pdb
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\GallerySysteServices.Models.pdb
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\EntityFramework.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\EntityFramework.SqlServer.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.AspNet.Scaffolding.EntityFramework.12.0.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Data.Edm.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.Data.OData.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Newtonsoft.Json.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Net.Http.Formatting.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Spatial.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Helpers.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.OData.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.Tracing.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.WebHost.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Mvc.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Razor.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.Deployment.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.WebPages.Razor.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\Microsoft.AspNet.Scaffolding.12.0.xml
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\de\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\es\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\it\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\de\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\es\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\fr\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\it\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ja\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ko\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ru\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\de\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\es\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\fr\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\it\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ja\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ko\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\ru\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hans\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\zh-Hant\System.Spatial.resources.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\obj\Debug\GallerySystemServices.Services.csprojResolveAssemblyReference.cache
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\obj\Debug\GallerySystemServices.Services.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\obj\Debug\GallerySystemServices.Services.pdb
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Cors.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.Cors.dll
+E:\VisualStudioProjects\GallerySystemServices\GallerySystemServices.Services\bin\System.Web.Http.Cors.xml
