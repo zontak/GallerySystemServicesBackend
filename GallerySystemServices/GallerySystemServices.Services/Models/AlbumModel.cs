@@ -27,6 +27,7 @@ namespace GallerySystemServices.Services.Models
         public string MainImageUrl { get; set; }
 
         public int CategoryId { get; set; }
+
         public UserModel User { get; set; }
     }
 }

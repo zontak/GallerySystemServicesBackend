@@ -44,9 +44,21 @@ namespace GallerySystemServices.Services.Managers
 
         public void DeleteAlbum(Album album)
         {
-            foreach (var picture in album.Pictures)
+            var albumPictures = album.Pictures.ToList();
+            var albumComments = album.Comments.ToList();
+            var albumVotes = album.Votes.ToList();
+
+            foreach (var picture in albumPictures)
             {
-                dbContext.Pictures.Remove(picture);
+                DeletePictureFromAlbum(picture);
+            }
+            foreach (var comment in albumComments)
+            {
+                dbContext.AlbumComments.Remove(comment);
+            }
+            foreach (var vote in albumVotes)
+            {
+                dbContext.AlbumVotes.Remove(vote);
             }
             dbContext.Albums.Remove(album);
             dbContext.SaveChanges();
@@ -86,6 +98,17 @@ namespace GallerySystemServices.Services.Managers
 
         public void DeletePictureFromAlbum(Picture picture)
         {
+            var pictureComments = picture.Comments.ToList();
+            var pictureVotes = picture.Votes.ToList();
+
+            foreach (var comment in pictureComments)
+            {
+                dbContext.PictureComments.Remove(comment);
+            }
+            foreach (var vote in pictureVotes)
+            {
+                dbContext.PictureVotes.Remove(vote);
+            }
             picture.Album.Pictures.Remove(picture);
             dbContext.Pictures.Remove(picture);
             dbContext.SaveChanges();

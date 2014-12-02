@@ -308,7 +308,7 @@ namespace GallerySystemServices.Services.Controllers
                                  Id = album.Id,
                                  CreatedAt = album.CreatedAt,
                                  CategoryId = album.Category.Id,
-                                 MainImageUrl = album.Pictures.Count > 0 ? album.Pictures.First().Url : ""
+                                 MainImageUrl = album.Pictures.Count() > 0 ? album.Pictures.First().Url : ""
                              };
 
                 return this.Request.CreateResponse(HttpStatusCode.OK, albums);

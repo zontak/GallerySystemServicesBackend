@@ -26,6 +26,11 @@ namespace GallerySystemServices.Services.Services
             var categoryService = new CategoriesService();
             var category = categoryService.GetCategoryById(albumModel.CategoryId);
 
+            if (category == null)
+            {
+                throw new Exception("Ne si setenal category...");
+            }
+
             var newAlbum = albumManager.CreateAlbum(album, user, category);
 
             return newAlbum;
