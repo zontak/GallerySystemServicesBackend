@@ -14,6 +14,7 @@
 
         public virtual ICollection<Category> Categories { get; set; }
 
+        [Required]
         public string Email { get; set; }
 
         public virtual ICollection<Album> Albums { get; set; }

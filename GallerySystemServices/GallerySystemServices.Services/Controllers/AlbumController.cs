@@ -13,7 +13,8 @@ namespace GallerySystemServices.Services.Controllers
 {
     public class AlbumController : ApiController
     {
-        private const string USER_ACCESS_DENIED = "Access Denied Ebalnik!";
+        private const string USER_ACCESS_DENIED = "Access Denied!";
+        private const string ALBUM_NOT_FOUND = "Album not found!";
 
         [HttpPost]
         [ActionName("createAlbum")]
@@ -25,10 +26,7 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception(USER_ACCESS_DENIED);
-                }
+                Validator.ValidateUser(user, USER_ACCESS_DENIED);
 
                 var albumService = new AlbumService();
                 var newAlbum = albumService.CreateAlbum(albumModel, user);
@@ -61,22 +59,16 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if(user == null)
-                {
-                    throw new Exception("Cannot delete album");
-                }
+                Validator.ValidateUser(user, "Cannot delete album");
 
                 var albumService = new AlbumService();
                 var album = albumService.GetAlbumById(albumId);
 
-                if (album == null)
-                {
-                    throw new Exception("Album not found");
-                }
+                Validator.ValidateAlbum(album, ALBUM_NOT_FOUND);
 
                 if(album.User.Id != user.Id)
                 {
-                    throw new Exception("Access denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
                 albumService.DeleteAlbum(album);
@@ -100,18 +92,12 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if(user == null) 
-                {
-                    throw new Exception("Access denied!");
-                }
+                Validator.ValidateUser(user, USER_ACCESS_DENIED);
 
                 var albumService = new AlbumService();
                 var album = albumService.GetAlbumById(albumId);
 
-                if(album == null) 
-                {
-                    throw new Exception("Album not found!");
-                }
+                Validator.ValidateAlbum(album, ALBUM_NOT_FOUND);
 
                 var newComment = albumService.AddComment(comment, album, user);
 
@@ -133,22 +119,16 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot edit album");
-                }
+                Validator.ValidateUser(user, "Cannot edit album");
 
                 var albumService = new AlbumService();
                 var album = albumService.GetAlbumById(albumId);
 
-                if (album == null)
-                {
-                    throw new Exception("Album not found");
-                }
+                Validator.ValidateAlbum(album, ALBUM_NOT_FOUND);
 
                 if (album.User.Id != user.Id)
                 {
-                    throw new Exception("Access Denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
                 var userModel = ModelCreator.CreateUserModel(user);
@@ -179,28 +159,23 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot edit album");
-                }
+                Validator.ValidateUser(user, "Cannot edit album");
 
                 var albumService = new AlbumService();
                 var album = albumService.GetAlbumById(albumId);
 
-                if (album == null)
-                {
-                    throw new Exception("Album not found");
-                }
+                Validator.ValidateAlbum(album, ALBUM_NOT_FOUND);
+
 
                 if (album.User.Id != user.Id)
                 {
-                    throw new Exception("Access Denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
                 var isVoted = album.Votes.Count(v => v.User.Id == user.Id) > 0;
                 if(isVoted)
                 {
-                    throw new Exception("Glasuval si ebalnik..!");
+                    throw new Exception("Already voted..");
                 }
 
                 var newVote = albumService.AddVoteToAlbum(vote, album, user);
@@ -222,22 +197,17 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot edit album");
-                }
+                Validator.ValidateUser(user, "Cannot add image to album");
 
                 var albumService = new AlbumService();
                 var album = albumService.GetAlbumById(albumId);
 
-                if (album == null)
-                {
-                    throw new Exception("Album not found");
-                }
+                Validator.ValidateAlbum(album, ALBUM_NOT_FOUND);
+
 
                 if (album.User.Id != user.Id)
                 {
-                    throw new Exception("Access Denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
                 var newPicture = albumService.AddPictureToAlbum(picture, album);
@@ -260,10 +230,7 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot delete album");
-                }
+                Validator.ValidateUser(user, "Cannot delete album");
 
                 var pictureService = new PictureService();
 
@@ -272,7 +239,7 @@ namespace GallerySystemServices.Services.Controllers
 
                 if (picture.Album.User.Id != user.Id)
                 {
-                    throw new Exception("Access denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
                 albumService.DeletePictureFromAlbum(picture);
@@ -296,10 +263,7 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot delete album");
-                }
+                Validator.ValidateUser(user, "Cannot get album");
 
                 var albums = from album in user.Albums
                              select new AlbumModel()
@@ -329,10 +293,7 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot delete album!");
-                }
+                Validator.ValidateUser(user, "Cannot get album by category");
 
                 var categoryService = new CategoriesService();
                 var category = categoryService.GetCategoryById(categoryId);
@@ -375,22 +336,16 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot delete album");
-                }
+                Validator.ValidateUser(user, "Cannot get picture from album");
 
                 var albumService = new AlbumService();
                 var album = albumService.GetAlbumById(albumId);
 
-                if (album == null)
-                {
-                    throw new Exception("Album not found");
-                }
+                Validator.ValidateAlbum(album, ALBUM_NOT_FOUND);
 
                 if (album.User.Id != user.Id)
                 {
-                    throw new Exception("Access Denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
                 var pictures = from picture in album.Pictures
@@ -421,22 +376,16 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot delete album");
-                }
+                Validator.ValidateUser(user, "Cannot get album by id");
 
                 var albumService = new AlbumService();
                 var album = albumService.GetAlbumById(albumId);
 
-                if (album == null)
-                {
-                    throw new Exception("Album not found");
-                }
+                Validator.ValidateAlbum(album, ALBUM_NOT_FOUND);
 
                 if (album.User.Id != user.Id)
                 {
-                    throw new Exception("Access Denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
 

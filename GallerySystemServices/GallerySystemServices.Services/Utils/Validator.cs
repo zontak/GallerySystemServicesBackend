@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GallerySysteServices.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,30 @@ namespace GallerySystemServices.Services.Utils
 
         private const string VALID_NAME_CHARS =
             "qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM";
+
+        public static void ValidatePicture(Picture picture, string error)
+        {
+            if(picture == null)
+            {
+                throw new Exception(error);
+            }
+        }
+
+        public static void ValidateAlbum(Album album, string error)
+        {
+            if(album == null)
+            {
+                throw new Exception(error);
+            }
+        }
+
+        public static void ValidateUser(User user, string error)
+        {
+            if(user == null)
+            {
+                throw new Exception(error);
+            }
+        }
 
         public static void ValidateEmail(string email)
         {

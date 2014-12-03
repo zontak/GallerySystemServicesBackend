@@ -45,10 +45,13 @@ namespace GallerySystemServices.Services.Controllers
             {
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
-                if (user == null)
-                {
-                    throw new Exception(NOT_LOGGED);
-                }
+
+                Validator.ValidateUser(user, NOT_LOGGED);
+
+                //if (user == null)
+                //{
+                //    throw new Exception(NOT_LOGGED);
+                //}
 
                 var userToReturn = ModelCreator.CreateUserModel(user);
 
@@ -71,10 +74,13 @@ namespace GallerySystemServices.Services.Controllers
             {
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
-                if (user == null)
-                {
-                    throw new Exception(NOT_LOGGED);
-                }
+
+                Validator.ValidateUser(user, NOT_LOGGED);
+
+                //if (user == null)
+                //{
+                //    throw new Exception(NOT_LOGGED);
+                //}
 
                 var categoriesToReturn = from category in user.Categories
                                          select new CategoryModel()
@@ -103,10 +109,12 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot edit album");
-                }
+                Validator.ValidateUser(user, "Cannot add category to user");
+
+                //if (user == null)
+                //{
+                //    throw new Exception("Cannot edit album");
+                //}
 
                 var newCategory = userService.AddCategoryToUser(category, user);
 

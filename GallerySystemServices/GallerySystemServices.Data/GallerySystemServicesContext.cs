@@ -25,6 +25,7 @@
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<AlbumComment> AlbumComments { get; set; }
+
         public DbSet<PictureComment> PictureComments { get; set; }
         public DbSet<PictureVote> PictureVotes { get; set; }
         public DbSet<AlbumVote> AlbumVotes { get; set; }

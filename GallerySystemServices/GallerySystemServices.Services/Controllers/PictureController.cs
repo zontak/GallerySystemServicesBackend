@@ -1,5 +1,6 @@
 ﻿using GallerySystemServices.Services.Models;
 using GallerySystemServices.Services.Services;
+using GallerySystemServices.Services.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,10 @@ namespace GallerySystemServices.Services.Controllers
 {
     public class PictureController : ApiController
     {
+
+        private const string USER_ACCESS_DENIED = "Access Denied!";
+        private const string PICTURE_NOT_FOUND = "Picture not found";
+
         [HttpPost]
         [ActionName("addCommentToPicture")]
         public HttpResponseMessage PostAddCommentToPicture(CommentModel comment, int pictureId, string sessionKey)
@@ -20,18 +25,12 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Access denied!");
-                }
+                Validator.ValidateUser(user, USER_ACCESS_DENIED);
 
                 var pictureService = new PictureService();
                 var picture = pictureService.GetPictureById(pictureId);
 
-                if (picture == null)
-                {
-                    throw new Exception("Picture not found!");
-                }
+                Validator.ValidatePicture(picture, PICTURE_NOT_FOUND);
 
                 var newComment = pictureService.AddPictureComment(comment, picture, user);
 
@@ -52,28 +51,22 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot edit album");
-                }
+                Validator.ValidateUser(user, "Cannot vote for picture");
 
                 var pictureService = new PictureService();
                 var picture = pictureService.GetPictureById(pictureId);
 
-                if (picture == null)
-                {
-                    throw new Exception("Picture not found");
-                }
+                Validator.ValidatePicture(picture, PICTURE_NOT_FOUND);
 
                 if (picture.Album.User.Id != user.Id)
                 {
-                    throw new Exception("Access Denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
                 var isVoted = picture.Votes.Count(v => v.User.Id == user.Id) > 0;
                 if (isVoted)
                 {
-                    throw new Exception("Glasuval si ebalnik..!");
+                    throw new Exception("Already voted..");
                 }
 
                 var newVote = pictureService.AddVoteToPicture(vote, picture, user);
@@ -96,22 +89,16 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                if (user == null)
-                {
-                    throw new Exception("Cannot delete album");
-                }
+                Validator.ValidateUser(user, "Cannot get picture by id");
 
                 var pictureService = new PictureService();
                 var picture = pictureService.GetPictureById(pictureId);
 
-                if (picture == null)
-                {
-                    throw new Exception("Album not found");
-                }
+                Validator.ValidatePicture(picture, PICTURE_NOT_FOUND);
 
                 if (picture.Album.User.Id != user.Id)
                 {
-                    throw new Exception("Access Denied");
+                    throw new Exception(USER_ACCESS_DENIED);
                 }
 
 
