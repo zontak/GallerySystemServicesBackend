@@ -113,5 +113,10 @@ namespace GallerySystemServices.Services.Managers
             dbContext.Pictures.Remove(picture);
             dbContext.SaveChanges();
         }
+
+        public IEnumerable<Album> GetAllAlbums()
+        {
+            return dbContext.Albums;        
+        }
     }
 }

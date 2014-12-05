@@ -319,7 +319,94 @@ namespace GallerySystemServices.Services.Controllers
                              {
                                  Title = album.Title,
                                  Id = album.Id,
+                                 Comments = from comment in album.Comments
+                                            select new CommentModel()
+                                            {
+                                                Text = comment.Text,
+                                                UserName = comment.User.UserName,
+                                                CreatedAt = comment.CreatedAt
+                                            },
+                                 PositiveVotes = album.Votes.Count(v => v.isPositive == true),
+                                 NegativeVotes = album.Votes.Count(v => v.isPositive == false),
                                  CreatedAt = album.CreatedAt,
+                                 Category = new CategoryModel()
+                                 {
+                                     Id = album.Category.Id,
+                                     Name = album.Category.Name
+                                 },
+                                 Pictures = from picture in album.Pictures
+                                            select new PictureModel()
+                                            {
+                                                CreateDate = picture.CreateDate,
+                                                Description = picture.Description,
+                                                Id = picture.Id,
+                                                Title = picture.Title,
+                                                Url = picture.Url
+                                            },
+                                User = new UserModel()
+                                {
+                                    CreatedAt = album.User.CreatedAt,
+                                    Email = album.User.Email,
+                                    Id = album.User.Id,
+                                    UserName = album.User.UserName
+                                },
+                                 CategoryId = album.Category.Id,
+                                 MainImageUrl = album.Pictures.Count() > 0 ? album.Pictures.First().Url : ""
+                             };
+
+                return this.Request.CreateResponse(HttpStatusCode.OK, albums);
+
+            }
+            catch (Exception ex)
+            {
+                return this.Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
+
+        [HttpGet]
+        [ActionName("GetAllAlbums")]
+        public HttpResponseMessage GetAllAlbums()
+        {
+            try
+            {
+                var albumsService = new AlbumService();
+                var allAlbums = albumsService.GetAllAlbums().ToList();
+                var albums = from album in allAlbums
+                             select new AlbumModel()
+                             {
+                                 Title = album.Title,
+                                 Id = album.Id,
+                                 Comments = from comment in album.Comments
+                                            select new CommentModel()
+                                            {
+                                                Text = comment.Text,
+                                                UserName = comment.User.UserName,
+                                                CreatedAt = comment.CreatedAt
+                                            },
+                                 PositiveVotes = album.Votes.Count(v => v.isPositive == true),
+                                 NegativeVotes = album.Votes.Count(v => v.isPositive == false),
+                                 CreatedAt = album.CreatedAt,
+                                 Category = new CategoryModel()
+                                 {
+                                     Id = album.Category.Id,
+                                     Name = album.Category.Name
+                                 },
+                                 Pictures = from picture in album.Pictures
+                                            select new PictureModel()
+                                            {
+                                                CreateDate = picture.CreateDate,
+                                                Description = picture.Description,
+                                                Id = picture.Id,
+                                                Title = picture.Title,
+                                                Url = picture.Url
+                                            },
+                                 User = new UserModel()
+                                 {
+                                     CreatedAt = album.User.CreatedAt,
+                                     Email = album.User.Email,
+                                     Id = album.User.Id,
+                                     UserName = album.User.UserName
+                                 },
                                  CategoryId = album.Category.Id,
                                  MainImageUrl = album.Pictures.Count() > 0 ? album.Pictures.First().Url : ""
                              };
