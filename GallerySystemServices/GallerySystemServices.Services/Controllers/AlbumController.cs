@@ -101,7 +101,15 @@ namespace GallerySystemServices.Services.Controllers
 
                 var newComment = albumService.AddComment(comment, album, user);
 
-                return this.Request.CreateResponse(HttpStatusCode.Created);
+                var commentToReturn = new CommentModel()
+                {
+                    CreatedAt = newComment.CreatedAt,
+                    Id = newComment.Id,
+                    Text = newComment.Text,
+                    UserName = user.UserName
+                };
+
+                return this.Request.CreateResponse(HttpStatusCode.Created, commentToReturn);
             }
             catch(Exception ex)
             {
@@ -159,18 +167,12 @@ namespace GallerySystemServices.Services.Controllers
                 var userService = new UserService();
                 var user = userService.GetUserBySessionKey(sessionKey);
 
-                Validator.ValidateUser(user, "Cannot edit album");
+                Validator.ValidateUser(user, "Cannot vote album");
 
                 var albumService = new AlbumService();
                 var album = albumService.GetAlbumById(albumId);
 
                 Validator.ValidateAlbum(album, ALBUM_NOT_FOUND);
-
-
-                if (album.User.Id != user.Id)
-                {
-                    throw new Exception(USER_ACCESS_DENIED);
-                }
 
                 var isVoted = album.Votes.Count(v => v.User.Id == user.Id) > 0;
                 if(isVoted)
@@ -180,7 +182,45 @@ namespace GallerySystemServices.Services.Controllers
 
                 var newVote = albumService.AddVoteToAlbum(vote, album, user);
 
-                return this.Request.CreateResponse(HttpStatusCode.OK);
+                var albumToReturn = new AlbumModel()
+                {
+                    Category = new CategoryModel()
+                    {
+                        Id = album.Category.Id,
+                        Name = album.Category.Name
+                    },
+                    Comments = from comment in album.Comments
+                               select new CommentModel()
+                               {
+                                   Text = comment.Text,
+                                   UserName = comment.User.UserName,
+                                   CreatedAt = comment.CreatedAt
+                               },
+                    CreatedAt = album.CreatedAt,
+                    Id = album.Id,
+                    MainImageUrl = album.Pictures.Count > 0 ? album.Pictures.First().Url : "",
+                    Pictures = from picture in album.Pictures
+                               select new PictureModel()
+                               {
+                                   CreateDate = picture.CreateDate,
+                                   Description = picture.Description,
+                                   Id = picture.Id,
+                                   Title = picture.Title,
+                                   Url = picture.Url
+                               },
+                    Title = album.Title,
+                    User = new UserModel()
+                    {
+                        CreatedAt = album.User.CreatedAt,
+                        Email = album.User.Email,
+                        Id = album.User.Id,
+                        UserName = album.User.UserName
+                    },
+                    PositiveVotes = album.Votes.Count(v => v.isPositive == true),
+                    NegativeVotes = album.Votes.Count(v => v.isPositive == false)
+                };
+
+                return this.Request.CreateResponse(HttpStatusCode.OK, albumToReturn);
             }
             catch (Exception ex)
             {
@@ -212,7 +252,16 @@ namespace GallerySystemServices.Services.Controllers
 
                 var newPicture = albumService.AddPictureToAlbum(picture, album);
 
-                return this.Request.CreateResponse(HttpStatusCode.OK);
+                var pictureToReturn = new PictureModel()
+                {
+                    CreateDate = newPicture.CreateDate,
+                    Description = newPicture.Description,
+                    Id = newPicture.Id,
+                    Url = newPicture.Url,
+                    Title = newPicture.Title
+                };
+
+                return this.Request.CreateResponse(HttpStatusCode.OK, pictureToReturn);
             }
             catch (Exception ex)
             {
@@ -308,7 +357,7 @@ namespace GallerySystemServices.Services.Controllers
                     throw new Exception("This user has no such this category!");
                 }
 
-                var albums = from album in user.Albums.Where(a => a.Id == categoryId)
+                var albums = from album in user.Albums.Where(a => a.Category.Id == categoryId)
                              select new AlbumModel()
                              {
                                  Title = album.Title,
