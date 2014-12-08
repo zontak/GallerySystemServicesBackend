@@ -41,5 +41,10 @@ namespace GallerySystemServices.Services.Managers
         {
             return dbContext.Pictures.FirstOrDefault(p => p.Id == id);
         }
+
+        public IEnumerable<Picture> GetAllPictures()
+        {
+            return dbContext.Pictures;
+        }
     }
 }

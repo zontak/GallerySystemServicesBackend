@@ -153,6 +153,40 @@ namespace GallerySystemServices.Services.Controllers
             }
         }
 
+        [HttpGet]
+        [ActionName("GetAllPictures")]
+        public HttpResponseMessage GetAllPictures()
+        {
+            try
+            {
+                var pictureService = new PictureService();
+                var allPictures = pictureService.GetAllPictures().ToList();
+                var pictures = from picture in allPictures
+                             select new PictureModel()
+                {
+                    Comments = from comment in picture.Comments
+                               select new CommentModel()
+                               {
+                                   Text = comment.Text,
+                                   UserName = comment.User.UserName,
+                                   CreatedAt = comment.CreatedAt
+                               },
+                    CreateDate = picture.CreateDate,
+                    Id = picture.Id,
+                    Url = picture.Url,
+                    Title = picture.Title,
+                    PositiveVotes = picture.Votes.Count(v => v.isPositive == true),
+                    NegativeVotes = picture.Votes.Count(v => v.isPositive == false)
+                };
+
+                return this.Request.CreateResponse(HttpStatusCode.OK, pictures);
+
+            }
+            catch (Exception ex)
+            {
+                return this.Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
 
     }
 }

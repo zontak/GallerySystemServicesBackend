@@ -48,5 +48,10 @@ namespace GallerySystemServices.Services.Services
 
             return picture;
         }
+
+        public IEnumerable<Picture> GetAllPictures()
+        {
+            return this.pictureManager.GetAllPictures();
+        }
     }
 }
