@@ -42,9 +42,9 @@ namespace GallerySystemServices.Services.Managers
             return dbContext.Pictures.FirstOrDefault(p => p.Id == id);
         }
 
-        public IEnumerable<Picture> GetAllPictures()
+        public IEnumerable<Picture> GetAllPictures(int pictureCount)
         {
-            return dbContext.Pictures;
+            return dbContext.Pictures.OrderByDescending(picture => picture.Votes.Count(v => v.isPositive == true) - picture.Votes.Count(v => v.isPositive == false)).Take(pictureCount);
         }
     }
 }

@@ -365,12 +365,12 @@ namespace GallerySystemServices.Services.Controllers
 
         [HttpGet]
         [ActionName("GetAllAlbums")]
-        public HttpResponseMessage GetAllAlbums()
+        public HttpResponseMessage GetAllAlbums(int albumCount = 10)
         {
             try
             {
                 var albumsService = new AlbumService();
-                var allAlbums = albumsService.GetAllAlbums().ToList();
+                var allAlbums = albumsService.GetAllAlbums(albumCount).ToList();
                 var albums = from album in allAlbums
                              select new AlbumModel()
                              {

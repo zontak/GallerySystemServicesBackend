@@ -114,9 +114,9 @@ namespace GallerySystemServices.Services.Managers
             dbContext.SaveChanges();
         }
 
-        public IEnumerable<Album> GetAllAlbums()
+        public IEnumerable<Album> GetAllAlbums(int albumCount)
         {
-            return dbContext.Albums;        
+            return dbContext.Albums.OrderByDescending(album => album.Votes.Count(v => v.isPositive == true) - album.Votes.Count(v => v.isPositive == false)).Take(albumCount);
         }
     }
 }

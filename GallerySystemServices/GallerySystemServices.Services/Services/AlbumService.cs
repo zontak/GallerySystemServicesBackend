@@ -96,9 +96,9 @@ namespace GallerySystemServices.Services.Services
             this.albumManager.DeletePictureFromAlbum(picture);
         }
 
-        public IEnumerable<Album> GetAllAlbums()
+        public IEnumerable<Album> GetAllAlbums(int albumCount)
         {
-            return this.albumManager.GetAllAlbums();
+            return this.albumManager.GetAllAlbums(albumCount);
         }
 
     }

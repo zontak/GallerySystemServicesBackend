@@ -155,12 +155,12 @@ namespace GallerySystemServices.Services.Controllers
 
         [HttpGet]
         [ActionName("GetAllPictures")]
-        public HttpResponseMessage GetAllPictures()
+        public HttpResponseMessage GetAllPictures(int pictureCount = 20)
         {
             try
             {
                 var pictureService = new PictureService();
-                var allPictures = pictureService.GetAllPictures().ToList();
+                var allPictures = pictureService.GetAllPictures(pictureCount).ToList();
                 var pictures = from picture in allPictures
                              select new PictureModel()
                 {
